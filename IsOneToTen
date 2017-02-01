@@ -1,0 +1,24 @@
+using System;
+
+namespace IsOneToTen
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine("Enter a valid number from 1 to 10:");
+            var enteredNumber = Console.ReadLine();
+            var int1 = 0;
+            int.TryParse(enteredNumber, out int1);
+
+            if (int1 >= 1 && int1 <= 10)
+            {
+                Console.WriteLine("Number is valid.");
+            }
+            else
+            {
+                Console.WriteLine("Number is not valid.");
+            }
+        }
+    }
+}
