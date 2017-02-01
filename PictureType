@@ -1,0 +1,32 @@
+using System;
+
+namespace LargerNumber
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine("Enter the dimensions of the picture.");
+            Console.WriteLine("Height: ");
+            var entered1 = Console.ReadLine();
+            Console.WriteLine("Width: ");
+            var entered2 = Console.ReadLine();
+
+            int first = 0;
+            int second = 0;
+
+            int.TryParse(entered1, out first);
+            int.TryParse(entered2, out second);
+
+            if (first >= second)
+            {
+                Console.WriteLine("The picture is in portrait mode.");
+            }
+            else
+            {
+                Console.WriteLine("The picture is in landscape mode.");
+            }
+
+        }
+    }
+}
