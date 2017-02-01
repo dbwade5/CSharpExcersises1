@@ -1,0 +1,32 @@
+using System;
+
+namespace LargerNumber
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine("Enter two numbers.");
+            Console.WriteLine("Number 1: ");
+            var entered1 = Console.ReadLine();
+            Console.WriteLine("Number 2: ");
+            var entered2 = Console.ReadLine();
+
+            int first = 0;
+            int second = 0;
+
+            int.TryParse(entered1, out first);
+            int.TryParse(entered2, out second);
+
+            if (first >= second)
+            {
+                Console.WriteLine(first + " is larger than " + second);
+            }
+            else
+            {
+                Console.WriteLine(second + " is larger than " + first);
+            }
+
+        }
+    }
+}
